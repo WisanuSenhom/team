@@ -23,7 +23,7 @@ async function getProfile() {
           <li class="list-group-item">ระยะห่างจากสำนักงาน : ${user.distance}</li>
            <li class="list-group-item">พิกัด : ${user.geo}</li>
            <a href="${user.location}" class="btn btn-info" type="button">เปิดแผนที่ตำแหน่งลงเวลาล่าสุด</a>
-           <a href="${user.sheet}" class="btn btn-success" type="button">คืนข้อมูล (รายงานลงเวลารรายวัน รายเดือน รายบุคคล)</a>
+           <a href="${user.sheet}" class="btn btn-success" type="button">คืนข้อมูล Google Sheet (รายงานลงเวลารรายวัน รายเดือน รายบุคคล)</a>
          </ul>
        </div>
        </div>    
