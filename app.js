@@ -19,7 +19,7 @@ async function getProfile() {
          (${user.position})
          </h7>
          <ul class="list-group list-group-flush">
-           <li class="list-group-item">วันที่ลงเวลาล่าสุด : ${user.datein}</li>
+           <li class="list-group-item">วันที่ลงเวลามาล่าสุด : ${user.datein}</li>
           <li class="list-group-item">ระยะห่างจากสำนักงาน : ${user.distance}</li>
            <li class="list-group-item">พิกัด : ${user.geo}</li>
            <a href="${user.location}" class="btn btn-info" type="button">เปิดแผนที่ตำแหน่งลงเวลาล่าสุด</a>
