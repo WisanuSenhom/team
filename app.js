@@ -19,19 +19,13 @@ async function getProfile() {
          (${user.position})
          </h7>
          <ul class="list-group list-group-flush">
-         <li class="list-group-item">การปฏิบัติงาน : ${user.work}</li>
-           <li class="list-group-item">วันที่ เวลามา : ${user.datein}</li>
-           <li class="list-group-item">วันที่ เวลากลับ : ${user.outin}</li>
-           <li class="list-group-item">ระยะห่างจากสำนักงาน : ${user.distance}</li>
-           <li class="list-group-item">ชี้แจง : ${user.note}</li>
-           <div class="d-grid gap-2 d-md-block">
-           <a href="${user.y}" class="btn btn-outline-success" type="button">อนุญาต</a>
-           <a href="${user.n}" class="btn btn-outline-danger" type="button">ไม่อนุาต</a>
-           </div>
+           <li class="list-group-item">วันที่ลงเวลาล่าสุด : ${user.datein}</li>
+          <li class="list-group-item">ระยะห่างจากสำนักงาน : ${user.distance}</li>
+           <li class="list-group-item">พิกัด : ${user.geo}</li>
+           <a href="${user.location}" class="btn btn-info" type="button">เปิดแผนที่ตำแหน่งลงเวลาล่าสุด</a>
+           <a href="${user.sheet}" class="btn btn-success" type="button">คืนข้อมูล (รายงานลงเวลารายบุคคล รายวัน)</a>
          </ul>
        </div>
-         <div class="card shadow-sm">ส่งคำขอเมื่อวันที่ เวลา : ${user.dupdate}
-         </div>
        </div>    
        `
      });
