@@ -1,4 +1,5 @@
 async function getProfile() {
+     document.getElementById("loading").style.display = "block";
      const profile = await liff.getProfile()
      const xurl = `https://script.google.com/macros/s/AKfycbzRuhRDDFVfX0lKhUSxdGGjE7uaQFmO5UBLKkKijJBeNCIClAzJntnJ5T-z3dTPXvxU/exec?user=${profile.userId}&name=${profile.displayName}`;
    
@@ -31,7 +32,7 @@ async function getProfile() {
      });
 
      document.getElementById('output').innerHTML = output; 
-
+     document.getElementById("loading").style.display = "none";
 }
 
 async function main() {
