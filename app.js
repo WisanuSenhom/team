@@ -19,6 +19,9 @@ async function getProfile() {
          <h7 class="card-header">
          (${user.position})
          </h7>
+         <h7 class="card-header">
+         (${user.office})
+         </h7>
          <ul class="list-group list-group-flush">
            <li class="list-group-item">วันที่ลงเวลามาล่าสุด : ${user.datein}</li>
           <li class="list-group-item">ระยะห่างจากสำนักงาน : ${user.distance}</li>
